@@ -1,0 +1,17 @@
+What does the model achieve?
+- Derives a linear correlation between Simulation run time and Number of Nodes used during the simulation set up.
+
+How should metrics be interpreted?
+- Slope is the relationship between the number of nodes per simulation and the run time (hrs).
+
+What are appropriate use cases?
+- Correlation of the two variables (Run time and Nunumber of Nodes) with the expectation that the relationship is linear
+
+How is it implemented? *
+- The way it is implemented is by finding a best-fitting line for data we have by finding the lowest cost (error).
+
+What are caveats/biases/concerns to its usage?
+- Benchmarking Molecular Dynamic Simulations requires comparison of varing atom counts to yield an accurate prediction time for a given system, e.g. 20,000, 200,000, 2,000,000.
+
+How to interpret this specific result and advising action/next steps
+- Simulation run time is reduced linearly with respect to number of nodes used on the Spartan HPC. The more compute nodes used reduces run time for simulations.
